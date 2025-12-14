@@ -4,12 +4,12 @@ const Header = () => {
   return (
     <>
       {/* Top Header */}
-      <nav class="navbar navbar-expand-lg navbar-light bg-light mx-2">
-        <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light mx-2">
+        <a className="navbar-brand" href="#">
           Navbar
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavDropdown"
@@ -17,32 +17,32 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
                 Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Buy Pixel
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 FAQ
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Pixel list
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Contact me
               </a>
             </li>
