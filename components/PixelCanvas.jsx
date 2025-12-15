@@ -10,17 +10,15 @@ function makeKey(x, y) {
 export default function PixelCanvas() {
   const canvasRef = useRef(null);
 
-  // pacchetti (numero di pixel logici)
+  // blocco minimo da 10x10
   const packs = useMemo(
     () => ({
-      10: { w: 10, h: 1, label: "10px" },
-      50: { w: 10, h: 5, label: "50px" },
-      100: { w: 10, h: 10, label: "100px" },
+      10: { w: 10, h: 10, label: "10px" },
     }),
     []
   );
 
-  const [packSize, setPackSize] = useState(100);
+  const [packSize] = useState(10);
   const [color, setColor] = useState("#ff0000");
 
   // “database” in memoria dei pixel colorati
@@ -37,7 +35,7 @@ export default function PixelCanvas() {
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
 
-    // griglia (come l'originale)
+    // griglia 
     drawGrid(ctx);
   }, []);
 
@@ -94,7 +92,7 @@ export default function PixelCanvas() {
     const x0 = Math.floor(startX / BLOCK) * BLOCK;
     const y0 = Math.floor(startY / BLOCK) * BLOCK;
 
-    for (let yy = 0; yy < h * BLOCK; yy++) {
+    for (let yy = 0; yy < h; yy++) {
       for (let xx = 0; xx < w; xx++) {
         const x = x0 + xx;
         const y = y0 + yy;
@@ -114,20 +112,6 @@ export default function PixelCanvas() {
     <div className="d-flex flex-column gap-3 align-items-center">
       {/* Toolbar */}
       <div className="d-flex flex-wrap gap-3 align-items-center">
-        <div className="btn-group">
-          {[10, 50, 100].map((n) => (
-            <button
-              key={n}
-              className={`btn btn-sm ${
-                packSize === n ? "btn-dark" : "btn-outline-dark"
-              }`}
-              onClick={() => setPackSize(n)}
-            >
-              {packs[n].label}
-            </button>
-          ))}
-        </div>
-
         <div className="d-flex align-items-center gap-2">
           <label className="m-0">Colore:</label>
           <input
