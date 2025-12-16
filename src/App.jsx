@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DefaultLayout from "../layouts/DefaultLayout";
 import Homepage from "../pages/Homepage";
 import BuyPixel from "../pages/BuyPixel";
+import Faq from "../pages/Faq";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<DefaultLayout />}>
           <Route index element={<Homepage />} />
           <Route path="buy" element={<BuyPixel />} />
+          <Route path="faq" element={<Faq />} />
         </Route>
       </Routes>
     </BrowserRouter>
