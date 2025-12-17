@@ -24,10 +24,9 @@ const MultipageExample = () => {
 
       {/* PAGE TITLE */}
       <section className="container my-5 text-center">
-        <h1>Multi-Page Website Example</h1>
+        <h1>Name of your company</h1>
         <p className="text-muted">
-          This is an example of a website composed of multiple pages, each with
-          its own content and purpose.
+          This is an example of a multipage website
         </p>
       </section>
 
