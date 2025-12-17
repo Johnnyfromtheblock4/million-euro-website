@@ -6,7 +6,7 @@ const Header = () => {
       {/* Top Header */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light mx-2">
         <a className="navbar-brand" href="#">
-          Navbar
+          OneMillion€uroWebsite
         </a>
         <button
           className="navbar-toggler"
@@ -42,9 +42,9 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/contact">
                 Contact me
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
