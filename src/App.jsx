@@ -5,6 +5,9 @@ import BuyPixel from "../pages/BuyPixel";
 import Faq from "../pages/Faq";
 import PixelList from "../pages/PixelList";
 import ContactMe from "../pages/ContactMe";
+import LandingExample from "../pages/examples/LandingExample";
+import MultipageExample from "../pages/examples/MultipageExample";
+import DatabaseExample from "../pages/examples/DatabaseExample";
 
 function App() {
   return (
@@ -16,6 +19,11 @@ function App() {
           <Route path="faq" element={<Faq />} />
           <Route path="pixels" element={<PixelList />} />
           <Route path="contact" element={<ContactMe />} />
+
+          {/* Examples */}
+          <Route path="examples/landing" element={<LandingExample />} />
+          <Route path="examples/multipage" element={<MultipageExample />} />
+          <Route path="examples/database" element={<DatabaseExample />} />
         </Route>
       </Routes>
     </BrowserRouter>

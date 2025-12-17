@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BuyPixel = () => {
   return (
@@ -31,7 +32,17 @@ const BuyPixel = () => {
                 <li>✔ Lifetime visibility</li>
               </ul>
 
-              <button className="btn btn-dark mt-auto">Order Now</button>
+              {/* See example */}
+              <Link
+                to="/examples/landing"
+                className="btn btn-outline-dark mb-2"
+              >
+                See example
+              </Link>
+
+              <button className="btn btn-dark mt-auto">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -59,7 +70,17 @@ const BuyPixel = () => {
                 <li>✔ Lifetime visibility</li>
               </ul>
 
-              <button className="btn btn-dark mt-auto">Order Now</button>
+              {/* See example */}
+              <Link
+                to="/examples/multipage"
+                className="btn btn-outline-dark mb-2"
+              >
+                See example
+              </Link>
+
+              <button className="btn btn-dark mt-auto">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -68,7 +89,9 @@ const BuyPixel = () => {
         <div className="col-12 col-md-4">
           <div className="card h-100 text-center">
             <div className="card-body d-flex flex-column">
-              <h5 className="card-title">Full Website with Database</h5>
+              <h5 className="card-title">
+                Full Website with Database
+              </h5>
               <h6 className="card-subtitle mb-3 text-muted">
                 €500 · 50 Pixels
               </h6>
@@ -87,7 +110,17 @@ const BuyPixel = () => {
                 <li>✔ Lifetime visibility</li>
               </ul>
 
-              <button className="btn btn-dark mt-auto">Order Now</button>
+              {/* See example */}
+              <Link
+                to="/examples/database"
+                className="btn btn-outline-dark mb-2"
+              >
+                See example
+              </Link>
+
+              <button className="btn btn-dark mt-auto">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
